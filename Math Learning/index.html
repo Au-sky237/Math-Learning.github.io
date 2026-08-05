@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>大学数学学习站</title>
+    <meta name="description" content="面向大学生的数学学习网站，提供高等数学、线性代数、微分方程与概率统计的系统内容与学习建议。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <a class="brand" href="#top">数学学习站</a>
+        <div class="nav-links">
+          <a href="#topics">核心模块</a>
+          <a href="#courses">专题学习</a>
+          <a href="#methodology">学习方法</a>
+          <a href="#roadmap">学习路线</a>
+          <a href="#practice">练习区</a>
+          <a href="#planner">学习计划</a>
+          <a href="#quiz">自测</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
+      </nav>
+
+      <div class="hero-content" id="top">
+        <div>
+          <p class="eyebrow">大学数学 • 体系化学习</p>
+          <h1>把抽象的数学，变成可以一步步掌握的知识框架。</h1>
+          <p class="hero-text">
+            这里汇总了高等数学、线性代数、微分方程和概率统计的关键概念、学习方法与练习建议，适合大学生系统复习与自学。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#topics">开始学习</a>
+            <button class="button secondary" id="tipButton">今日学习提示</button>
+          </div>
+          <div class="stats">
+            <div><strong>4</strong><span>核心数学模块</span></div>
+            <div><strong>12+</strong><span>高频学习方法</span></div>
+            <div><strong>1</strong><span>可复盘自测</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>今日建议</h3>
+          <p id="tipText">先从概念理解开始，再用例题把方法固化。</p>
+          <ul>
+            <li>每次只攻克一个核心主题</li>
+            <li>做题后总结“为什么这样做”</li>
+            <li>把错题整理成复习卡片</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="topics">
+        <div class="section-heading">
+          <p class="eyebrow">核心模块</p>
+          <h2>每一部分都配有学习重点与思维方法</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>高等数学</h3>
+            <p>掌握极限、导数、积分和级数的基本思路，建立“从局部到整体”的观察方式。</p>
+            <ul>
+              <li>理解变化率与面积累加</li>
+              <li>熟悉常见求导与积分技巧</li>
+              <li>练习极值与微分方程联立应用</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>线性代数</h3>
+            <p>从向量、矩阵、行列式到特征值，建立结构化思维，适合解决多变量问题。</p>
+            <ul>
+              <li>用矩阵理解线性变换</li>
+              <li>掌握高斯消元与秩的判断</li>
+              <li>通过特征值分析系统稳定性</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>微分方程</h3>
+            <p>从模型出发理解方程如何描述变化过程，学习从现象到公式的建模能力。</p>
+            <ul>
+              <li>区分一阶与高阶方程</li>
+              <li>掌握常数变易与分离变量</li>
+              <li>将现实问题转化为方程模型</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>概率统计</h3>
+            <p>用随机变量、分布与统计推断解决数据分析问题，培养概率思维。</p>
+            <ul>
+              <li>理解期望与方差的意义</li>
+              <li>区分离散分布与连续分布</li>
+              <li>练习假设检验与置信区间</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="courses">
+        <div class="section-heading">
+          <p class="eyebrow">专题学习</p>
+          <h2>按主题进入更细的学习内容</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card reveal">
+            <h3>高等数学</h3>
+            <p>从极限到微积分，建立“从局部到整体”的求解主线。</p>
+            <a class="inline-link" href="high-math.html">进入专题 →</a>
+          </article>
+          <article class="card reveal">
+            <h3>线性代数</h3>
+            <p>用向量与矩阵理解结构化问题，提升抽象推理能力。</p>
+            <a class="inline-link" href="linear-algebra.html">进入专题 →</a>
+          </article>
+          <article class="card reveal">
+            <h3>微分方程</h3>
+            <p>把现实变化过程转化为方程模型，培养建模思维。</p>
+            <a class="inline-link" href="differential-equations.html">进入专题 →</a>
+          </article>
+          <article class="card reveal">
+            <h3>概率统计</h3>
+            <p>通过分布与统计推断，形成处理随机问题的基本框架。</p>
+            <a class="inline-link" href="probability-statistics.html">进入专题 →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="generator">
+        <div class="section-heading">
+          <p class="eyebrow">题目生成器</p>
+          <h2>点击专题，即可生成相关练习题</h2>
+        </div>
+        <div class="generator-layout">
+          <div class="panel">
+            <h3>选择专题</h3>
+            <div class="topic-pills">
+              <button class="topic-pill" data-topic="高等数学">高等数学</button>
+              <button class="topic-pill" data-topic="线性代数">线性代数</button>
+              <button class="topic-pill" data-topic="微分方程">微分方程</button>
+              <button class="topic-pill" data-topic="概率统计">概率统计</button>
+            </div>
+            <h3 class="subheading">难度选择</h3>
+            <div class="difficulty-pills">
+              <button class="difficulty-pill active" data-difficulty="easy">基础</button>
+              <button class="difficulty-pill" data-difficulty="medium">中等</button>
+              <button class="difficulty-pill" data-difficulty="hard">进阶</button>
+            </div>
+            <div class="progress-summary" id="progressSummary">已做 0 题 · 已掌握 0 · 待复习 0</div>
+            <div class="tool-row">
+              <button class="tool-btn" id="clearProgressBtn">清空记录</button>
+              <button class="tool-btn" id="showMistakesBtn">查看错题本</button>
+            </div>
+          </div>
+          <div class="panel">
+            <h3 id="questionTitle">请点击上方专题</h3>
+            <ul id="questionList" class="question-list"></ul>
+            <div class="mistake-list" id="mistakeList"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="methodology">
+        <div class="section-heading">
+          <p class="eyebrow">学习方法</p>
+          <h2>把“会做题”升级为“真的理解”</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>概念先行</h3>
+            <p>先理解定义与直觉，再去记公式，这样才能在变式题中灵活运用。</p>
+          </article>
+          <article class="card">
+            <h3>例题拆解</h3>
+            <p>每看一道例题，都要问：它考的到底是哪个核心思想？</p>
+          </article>
+          <article class="card">
+            <h3>错题归档</h3>
+            <p>把错误原因分类成“概念不牢”“步骤漏掉”“计算失误”，复习会更高效。</p>
+          </article>
+          <article class="card">
+            <h3>定期复盘</h3>
+            <p>每周抽出 30 分钟回顾本周知识点，建立稳定的记忆闭环。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt" id="roadmap">
+        <div class="section-heading">
+          <p class="eyebrow">学习路线</p>
+          <h2>按阶段推进，比盲目刷题更高效</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>第 1 阶段：打基础</h3>
+            <p>回顾函数、极限和基本代数运算，确保概念没有漏洞。</p>
+          </div>
+          <div class="timeline-item">
+            <h3>第 2 阶段：建立方法</h3>
+            <p>分模块学习导数、积分、矩阵运算与概率分布，形成“套路化”解题框架。</p>
+          </div>
+          <div class="timeline-item">
+            <h3>第 3 阶段：综合训练</h3>
+            <p>通过综合题与错题复盘，提升对题型的识别与迁移能力。</p>
+          </div>
+          <div class="timeline-item">
+            <h3>第 4 阶段：冲刺应用</h3>
+            <p>把不同课程内容联系起来，训练在考试与实际问题中灵活运用。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="practice">
+        <div class="section-heading">
+          <p class="eyebrow">练习区</p>
+          <h2>练习不是为了“做完”，而是为了“真正看懂”</h2>
+        </div>
+        <div class="practice-layout">
+          <div class="panel">
+            <h3>推荐练习顺序</h3>
+            <ol>
+              <li>先看例题，理解方法背后的逻辑。</li>
+              <li>独立做同类题，尽量不看答案。</li>
+              <li>将错误原因写成一句话，方便以后复盘。</li>
+              <li>每周整理一次“高频错题集”。</li>
+            </ol>
+          </div>
+          <div class="panel">
+            <h3>高效复盘模板</h3>
+            <p><strong>题目：</strong> 这道题考什么？</p>
+            <p><strong>思路：</strong> 我用什么方法解决？</p>
+            <p><strong>误区：</strong> 我哪里卡住了？</p>
+            <p><strong>总结：</strong> 下次遇到类似题要怎么做？</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="planner">
+        <div class="section-heading">
+          <p class="eyebrow">学习计划</p>
+          <h2>让一周的复习更有节奏，而不是只靠临时冲刺</h2>
+        </div>
+        <div class="planner-layout">
+          <div class="panel">
+            <h3>本周目标</h3>
+            <p>勾选完成的任务，帮助自己把学习推进到可见的状态。</p>
+            <ul class="checklist">
+              <li><label><input type="checkbox" class="planner-check" data-goal="concept"> 复习一个核心概念，并写下它的“直觉解释”</label></li>
+              <li><label><input type="checkbox" class="planner-check" data-goal="example"> 做 2 道典型例题并总结每一步的理由</label></li>
+              <li><label><input type="checkbox" class="planner-check" data-goal="mistake"> 归档 1 道错题，写清楚错因与改正思路</label></li>
+              <li><label><input type="checkbox" class="planner-check" data-goal="review"> 用 10 分钟复盘本周所学，并整理关键词</label></li>
+            </ul>
+            <div class="planner-summary" id="plannerSummary">已完成 0 / 4 项</div>
+          </div>
+          <div class="panel">
+            <h3>建议怎么用这套站点</h3>
+            <div class="planner-tip"><strong>第一步：</strong> 先用专题页建立概念主线。</div>
+            <div class="planner-tip"><strong>第二步：</strong> 再用练习区生成题目做针对性训练。</div>
+            <div class="planner-tip"><strong>第三步：</strong> 把错题记录下来，形成自己的复习闭环。</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="resources">
+        <div class="section-heading">
+          <p class="eyebrow">学习资源</p>
+          <h2>把资源用在正确的地方，复习效率会明显提升</h2>
+        </div>
+        <div class="resource-layout">
+          <div class="resource-list">
+            <button class="resource-item" data-resource="notes">📘 课堂笔记模板：适合整理每节课的重点</button>
+            <button class="resource-item" data-resource="formula">📝 公式速查表：高等数学与线性代数的核心公式</button>
+            <button class="resource-item" data-resource="quiz">🧠 章节自测题：帮助快速定位薄弱点</button>
+            <button class="resource-item" data-resource="plan">📚 推荐复习节奏：一个月内完成基础+练习闭环</button>
+          </div>
+          <div class="resource-detail" id="resourceDetail">
+            <h3>点击上方资源卡片</h3>
+            <p>这里会显示对应的学习内容，并提供跳转到相关专题的入口。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="analyzer">
+        <div class="section-heading">
+          <p class="eyebrow">题目上传解析</p>
+          <h2>上传考试题目图片，自动识别题干并生成完整答案与解析</h2>
+        </div>
+        <div class="panel">
+          <h3>进入独立解析页</h3>
+          <p>点击下面的按钮后，会跳转到专门的解析页面，在那里上传图片即可查看完整答案与解析。</p>
+          <a class="button primary" href="analyzer.html">进入题目解析页</a>
+        </div>
+      </section>
+
+      <section class="section alt" id="quiz">
+        <div class="section-heading">
+          <p class="eyebrow">自测</p>
+          <h2>用短小测试把知识点固定下来</h2>
+        </div>
+        <div class="quiz-card">
+          <h3 id="quizTitle">快速判断题</h3>
+          <p id="quizPrompt">若函数在某点可导，那么它在该点一定连续。你认为这个说法是否正确？</p>
+          <div class="quiz-options" id="quizOptions"></div>
+          <p class="quiz-feedback" id="quizFeedback">选择一个选项后查看解释。</p>
+          <button class="button secondary" id="nextQuizBtn" style="margin-top: 12px;">换一道自测题</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>为大学数学学习打造的清晰入口，让每一次复习都更有方向。</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

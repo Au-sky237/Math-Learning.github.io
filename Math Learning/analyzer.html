@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>题目上传解析</title>
+    <meta name="description" content="上传数学题目图片，自动生成答案与完整解析的独立解析页。" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero subpage-hero">
+      <nav class="nav">
+        <a class="brand" href="index.html">数学学习站</a>
+        <div class="nav-links">
+          <a href="index.html#topics">核心模块</a>
+          <a href="index.html#analyzer">题目解析入口</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
+      </nav>
+
+      <div class="hero-content subpage-content">
+        <div>
+          <p class="eyebrow">独立解析页</p>
+          <h1>上传题目图片，直接查看答案与完整解析</h1>
+          <p class="hero-text">这里是专门用于上传考试题目图片并生成解析的页面，适合快速查看标准答案与解题思路。</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="subpage-main">
+      <section class="section">
+        <div class="upload-panel">
+          <div class="upload-area">
+            <label class="upload-label" for="questionImage">选择题目图片</label>
+            <input type="file" id="questionImage" accept="image/*" />
+            <button class="button primary" id="analyzeImageBtn">开始分析</button>
+            <p class="hero-text">上传后，页面会显示识别内容、答案与完整解析。</p>
+          </div>
+          <div class="upload-preview-wrap">
+            <img id="uploadPreview" class="upload-preview" alt="上传题目图片预览" />
+          </div>
+          <div class="analysis-result" id="analysisResult">
+            <h3>分析结果</h3>
+            <p id="analysisStatus">请上传一张包含题目文字的图片，系统将为你生成答案与解析。</p>
+            <div class="analysis-block">
+              <h4>识别内容</h4>
+              <p id="ocrText">暂无识别结果</p>
+            </div>
+            <div class="analysis-block">
+              <h4>答案</h4>
+              <div id="analysisAnswer" class="analysis-answer-box">等待分析</div>
+            </div>
+            <div class="analysis-block">
+              <h4>解析</h4>
+              <div id="analysisExplanation" class="analysis-explanation-box">等待分析</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

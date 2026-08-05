@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>概率统计专题</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-topic="概率统计">
+    <header class="hero subpage-hero">
+      <nav class="nav">
+        <a class="brand" href="index.html">数学学习站</a>
+        <div class="nav-links">
+          <a href="index.html#topics">核心模块</a>
+          <a href="index.html#courses">专题学习</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
+      </nav>
+      <div class="hero-content subpage-content">
+        <div>
+          <p class="eyebrow">专题四</p>
+          <h1>概率统计</h1>
+          <p class="hero-text">用概率与统计工具解释随机现象，并建立数据分析的基本思维。</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="subpage-main">
+      <section class="section">
+        <div class="card-grid">
+          <article class="card">
+            <h3>1. 随机变量</h3>
+            <p>随机变量是概率统计中最核心的桥梁，用来把随机现象抽象为可分析对象。</p>
+          </article>
+          <article class="card">
+            <h3>2. 分布与期望</h3>
+            <p>了解分布特点，才能把“随机”变成“可预测”的信息。</p>
+          </article>
+          <article class="card">
+            <h3>3. 方差与协方差</h3>
+            <p>这些量帮助判断波动、相关性与离散程度。</p>
+          </article>
+          <article class="card">
+            <h3>4. 统计推断</h3>
+            <p>从样本回到总体，建立假设检验与区间估计的基本框架。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">试卷式核心内容</p>
+          <h2>概率统计的标准公式与分布图像</h2>
+        </div>
+        <div class="knowledge-grid">
+          <article class="card formula-card">
+            <h3>加法公式</h3>
+            <div class="formula-display">
+              \[
+              \displaystyle
+              P(A\cup B)=P(A)+P(B)-P(A\cap B)
+              \]
+            </div>
+            <p class="formula-caption">交并事件的概率公式是概率论中最基础的结构性结论，用于处理重叠事件。</p>
+          </article>
+          <article class="card formula-card">
+            <h3>期望与方差</h3>
+            <div class="formula-display">
+              \[
+              \displaystyle
+              E(X)=\sum x_i p_i,\qquad \operatorname{Var}(X)=E[(X-\mu)^2]
+              \]
+            </div>
+            <p class="formula-caption">期望刻画“平均水平”，方差刻画“波动大小”，是统计学最常见的两个量。</p>
+          </article>
+          <article class="card formula-card">
+            <h3>正态分布密度</h3>
+            <div class="formula-display">
+              \[
+              \displaystyle
+              f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+              \]
+            </div>
+            <p class="formula-caption">正态分布是统计推断与参数估计中的核心模型，其图像是经典的“钟形曲线”。</p>
+          </article>
+          <article class="card formula-card">
+            <h3>样本均值近似</h3>
+            <div class="formula-display">
+              \[
+              \displaystyle
+              \bar{X}\approx N\left(\mu,\frac{\sigma^2}{n}\right)
+              \]
+            </div>
+            <p class="formula-caption">中心极限定理说明，大样本下样本均值趋于正态分布，这也是许多检验题的依据。</p>
+          </article>
+          <article class="card formula-card wide-card">
+            <h3>分布图像示意</h3>
+            <div class="exam-figure">
+              <svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="概率统计分布图像示意">
+                <rect x="20" y="20" width="680" height="280" rx="24" fill="#f8fbff" stroke="#dfe8ff" />
+                <path d="M90 230 C130 180, 180 150, 230 170 S340 210, 400 180 S560 120, 640 110" stroke="#4f6df5" stroke-width="4" fill="none" />
+                <path d="M90 230 C130 270, 180 290, 230 270 S340 230, 400 250 S560 290, 640 280" stroke="#4f6df5" stroke-width="4" fill="none" />
+                <line x1="90" y1="230" x2="640" y2="230" stroke="#162033" stroke-width="2" />
+                <text x="95" y="95" font-size="20" fill="#162033">钟形曲线</text>
+                <text x="420" y="95" font-size="18" fill="#162033">均值与方差决定分布形态</text>
+              </svg>
+            </div>
+            <p class="exam-note">概率统计不仅要会算，也要会“看图”——分布曲线能够直观地表达概率集中程度和离散程度。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="generator-layout">
+          <div class="panel">
+            <h3>生成相关题目</h3>
+            <div class="topic-pills">
+              <button class="topic-pill" data-topic="概率统计">概率统计</button>
+            </div>
+          </div>
+          <div class="panel">
+            <h3 id="questionTitle">概率统计 · 相关题目</h3>
+            <ul id="questionList" class="question-list"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>概率统计的学习重点，是把不确定性变成可说明的结论。</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
